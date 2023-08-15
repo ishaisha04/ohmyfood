@@ -1,0 +1,105 @@
+.restaurants {
+    background: $offwhite;
+        padding: 2rem 0;
+    h2 {
+        font-size: 1.6rem;
+        padding: 0.5rem 0 1rem 1rem;
+    }
+
+    
+
+    .restaurants-options {
+        @include displayflex(row);
+        flex-wrap: wrap;
+
+        // padding: 0 2rem;
+        .restaurant-box {
+            display: inline-block;
+            background: $white;
+            width: 22%;
+            //    max-height: 30rem;
+            margin: 0 1rem;
+            border-radius: 1.5rem;
+            box-shadow: $boxshadow1;
+            position: relative;
+
+            a {
+                // cursor: pointer;
+
+                img {
+                    width: 100%;
+                    height: 12rem;
+                    object-fit: cover;
+                    border-radius: 1rem 1rem 0 0;
+                    // position: relative;
+
+                }
+
+                .restaurant-box_content {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .restaurant-box_text {
+                        padding: 0.5rem;
+
+                        h4 {
+                            font-size: 1.2rem;
+                            font-weight: 800;
+                            padding-left: 0.5rem;
+                        }
+
+                        p {
+                            font-size: 1rem;
+                            padding-left: 0.5rem;
+                        }
+                    }
+
+                    // .restaurant-box_heart {}
+
+
+
+
+                }
+            }
+        }
+
+
+    }
+
+    .newtext::after {
+        content: "New";
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        font-size: 1rem;
+        z-index: 1;
+        top: 15px;
+        right: 8px;
+        height: 2rem;
+        width: 4rem;
+        background: $teritary;
+        color: green;
+        text-align: center;
+        padding: 0 0.5rem;
+
+    }
+}
+
+
+@media(max-width:768px) {
+    .logo img {
+        width: 50%;
+        padding: 0.5rem 0;
+    }
+
+    .restaurants .restaurants-options {
+        flex-direction: column;
+    }
+
+    .restaurants .restaurants-options .restaurant-box {
+        width: 90%;
+        margin: 1rem;
+    }
+}

@@ -1,0 +1,45 @@
+.ResHeartMove {
+    border: none;
+    background-color: inherit;
+    position: relative;
+    font-size: 1.5rem;
+    height: fit-content;
+}
+
+.ResHeartMove__bottom {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.ResHeartMove:focus .ResHeartMove__bottom,
+.ResHeartMove:hover .ResHeartMove__bottom,
+.ResHeartMove:active .ResHeartMove__bottom {
+    opacity: 0;
+}
+
+.ResHeartMove:focus .ResHeartMove__top,
+.ResHeartMove:hover .ResHeartMove__top,
+.ResHeartMove:active .ResHeartMove__top {
+    opacity: 1;
+}
+
+.ResHeartMove__top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.ResHeartMove .far {
+    display: block;
+}
+
+.ResHeartMove .fas {
+    display: block;
+    background: -webkit-linear-gradient(#9356dc, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

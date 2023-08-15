@@ -1,0 +1,82 @@
+.menu-dish {
+    @include displayflex(column);
+    width: 25%;
+    border-radius: 0.5rem;
+    background: $white;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+
+    div {
+        @include displayflex(row);
+        justify-content: space-between;
+
+        .dish-in {
+            display: inline-block;
+            font-size: 1rem;
+            transition: transform 0.3s, margin 0.3s;
+            position: relative;
+
+        }
+
+        .dish-price {
+            font-size: 1rem;
+            transition: transform 0.6s;
+        }
+
+
+
+
+    }
+
+    .tick-button {
+        position: absolute;
+        right:0;top:0;
+        height: 100%;
+        width: 0;
+        border: none;
+        overflow: hidden;
+        background:$teritary;
+        opacity: 0;
+        transition: opacity 0.3s, transform 0.3s;
+        transition: width 0.6s;
+        i{
+            border-radius: 50%;
+            padding: 0.5rem;
+            background:$white;
+            color:$teritary;
+            transition: transform 0.8s ease-in-out;
+            
+        }
+    }
+
+    &:hover {
+        & .dish-in {
+            width: 180px;
+            white-space: nowrap;
+            /* Prevent line break */
+            overflow: hidden;
+            /* Hide overflow content */
+            text-overflow: ellipsis;
+        }
+
+        & .dish-price {
+            transform: translateX(-40px);
+            padding-right: 1.5rem;
+        }
+
+        & .tick-button {
+            & i{
+                transform: rotate(360deg);
+            }
+            opacity: 1;
+            width:3rem;
+            
+        }
+    }
+
+
+
+}

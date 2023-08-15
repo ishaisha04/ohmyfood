@@ -1,0 +1,94 @@
+
+.logo {
+    @include flexcenter(row);
+}
+
+.location {
+    @include flexcenter(row);
+    font-size: 1.2rem;
+    background: $mapseccol;
+    padding: 0.5rem;
+
+    #{&}-info {
+        .location-icon {
+            padding-right: 1rem;
+        }
+    }
+
+}
+
+.explore {
+    @include flexcenter(column);
+    background: $offwhite;
+    padding: 2rem 0;
+
+    #{&}-heading {
+        font-size: 1.6rem;
+        font-weight: 800;
+        padding-bottom: 1.5rem;
+    }
+
+    #{&}-para {
+        text-align: center;
+        font-size: 1.4rem;
+        width: 22rem;
+        padding-bottom: 1.5rem;
+
+    }
+
+    #{&}-btn {
+        background: linear-gradient(to bottom right, $secondary, $primary);
+        color: $white;
+        cursor: pointer;
+        border-radius: 2rem;
+        width: 14rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+}
+
+.booking-steps {
+    @include flexcenter(column);
+    padding: 2rem 0;
+
+    #{&}_heading {
+        font-size: 1.6rem;
+        font-weight: 800;
+        padding-bottom: 1rem;
+    }
+
+    #{&}_btn {
+        border-radius: 1.5rem;
+        position: relative;
+        cursor: pointer;
+        border: none;
+        text-align: left;
+        font-weight: 500;
+        line-height: 1.5rem;
+        padding-left: 3rem;
+        width: 20rem;
+        height: 4rem;
+        font-size: 1rem;
+        margin: 0.5rem 0;
+        background: $offwhite;
+
+        .booking-steps_btntxt {
+            padding: 1rem;
+        }
+    }
+
+    .booking-steps_btn1::before {
+        @include numbering("1")
+    }
+
+    .booking-steps_btn2::before {
+        @include numbering("2")
+    }
+
+    .booking-steps_btn3::before {
+        @include numbering("3")
+    }
+
+
+
+}

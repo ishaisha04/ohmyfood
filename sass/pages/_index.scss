@@ -1,0 +1,200 @@
+.mar {
+    margin: 0 5rem;
+}
+
+header {
+    @include displayflex(row);
+
+    .left-arrow {
+        display: flex;
+        font-size: 1.5rem;
+        align-items: center;
+        padding-left: 1rem;
+    }
+
+    .logo {
+        display: flex;
+        margin: 0 auto;
+    }
+}
+
+.menu-img {
+    position: relative;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2 /0.52;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+
+}
+
+.menu {
+    background: $offwhite;
+    position: relative;
+    margin-top: -1.5rem;
+    z-index: 1;
+    border-radius: 1.5rem;
+    @include displayflex(column);
+    justify-content: center;
+    // align-items: center;
+    // margin: 0 auto;
+    width: 100%;
+
+    #{&}-name {
+        @include displayflex(row);
+        justify-content: space-evenly;
+        padding: 0.5rem 2rem;
+        font-size: 1.4rem;
+
+
+    }
+
+    #{&}-subheading {
+        font-size: 1rem;
+        position: relative;
+        padding: 1.5rem 0 1rem 1rem;
+
+    }
+
+    .menu-subheading::after {
+        content: "";
+        position: absolute;
+        top: 2.8rem;
+        left: 1rem;
+        background: $teritary;
+        width: 2.5rem;
+        height: 0.2rem;
+        //    padding-left: 2rem;
+    }
+
+    #{&}-infobox {
+        @include displayflex(column);
+        align-items: center;
+        opacity: 0;
+        transform: translateY(2rem);
+        animation: fadeIn 1s forwards;
+
+
+
+        .menu-dish {
+
+
+            // @include box-shadow;
+            h4 {
+                font-size: 1.2rem;
+            }
+        }
+
+        &.box2 {
+            animation-delay: 1s
+        }
+
+
+        &.box3 {
+            animation-delay: 1.30s
+        }
+
+        &.box4 {
+            animation-delay: 2s;
+        }
+
+        &.box5 {
+            animation-delay: 2.30s;
+        }
+
+        &.box6 {
+            animation-delay: 3s;
+        }
+
+        &.box7 {
+            animation-delay: 3.30s;
+        }
+
+        &.box8 {
+            animation-delay: 4s;
+        }
+
+        &.box9 {
+            animation-delay: 4.30s;
+        }
+
+        &.box10 {
+            animation-delay: 5s;
+        }
+    }
+
+
+
+
+
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+
+
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.order-btn {
+    background: linear-gradient(to bottom right, $secondary, $primary);
+    color: $white;
+    cursor: pointer;
+    border-radius: 2rem;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+    margin: 2rem auto;
+}
+
+
+@media(max-width:768px) {
+    .mar {
+        margin: 0;
+    }
+
+    header {
+        padding: 0.5rem 0;
+    }
+
+    .menu-img {
+        position: relative;
+
+        img {
+            display: block;
+            width: 100%;
+            // height: auto;
+            aspect-ratio: 1 /0.52;
+            object-fit: cover;
+            border-radius: 0 0 0 0;
+        }
+
+    }
+
+    .menu {
+
+        .menu-name {
+            justify-content: space-between;
+            padding: 1.5rem 2rem 0 1rem;
+        }
+
+        #{&}-infobox {
+            .menu-dish {
+                width: 95%;
+
+            }
+        }
+    }
+}
