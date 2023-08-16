@@ -1,7 +1,7 @@
 .menu-dish {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 30%;
   border-radius: 0.5rem;
   background: #ffffff;
   padding: 0.5rem;
@@ -500,6 +500,9 @@ header .logo {
 .restaurants .restaurants-options .restaurant-box a .restaurant-box_content .restaurant-box_text p {
   font-size: 1rem;
   padding-left: 0.5rem;
+}
+.restaurants .restaurants-options .restaurant-box a .restaurant-box_content .heart {
+  padding-right: 1rem;
 }
 .restaurants .newtext::after {
   content: "New";
