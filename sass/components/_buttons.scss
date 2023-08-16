@@ -53,6 +53,7 @@
     }
 
     &:hover {
+        cursor: pointer;
         & .dish-in {
             width: 180px;
             white-space: nowrap;

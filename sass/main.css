@@ -45,6 +45,9 @@
   color: #99E2D0;
   transition: transform 0.8s ease-in-out;
 }
+.menu-dish:hover {
+  cursor: pointer;
+}
 .menu-dish:hover .dish-in {
   width: 180px;
   white-space: nowrap;
@@ -517,7 +520,7 @@ header .logo {
   width: 4rem;
   background: #99E2D0;
   color: green;
-  text-align: center;
+  align-items: center;
   padding: 0 0.5rem;
 }
 
