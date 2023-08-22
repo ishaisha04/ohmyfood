@@ -1,11 +1,3 @@
-.ResHeartMove {
-  border: none;
-  background-color: inherit;
-  position: relative;
-  font-size: 1.5rem;
-  height: -moz-fit-content;
-  height: fit-content;
-}
 .ResHeartMove__bottom {
   opacity: 1;
   transition: opacity 1s;
