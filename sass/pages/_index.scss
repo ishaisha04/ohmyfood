@@ -36,37 +36,30 @@
 
                 }
 
-                .restaurant-box_content {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
+                .restaurant-box_text {
+                    padding: 0.5rem;
+                    position: relative;
 
-                    .restaurant-box_text {
-                        padding: 0.5rem;
-                        position: relative;
-
-                        h4 {
-                            font-size: 1.2rem;
-                            font-weight: 800;
-                            padding-left: 0.5rem;
-                        }
-
-                        p {
-                            font-size: 1rem;
-                            padding-left: 0.5rem;
-                        }
+                    h4 {
+                        font-size: 1.2rem;
+                        font-weight: 800;
+                        padding-left: 0.5rem;
                     }
 
+                    p {
+                        font-size: 1rem;
+                        padding-left: 0.5rem;
+                    }
                 }
-
             }
-                .ResHeartMove {
-                    position: absolute;
-                    bottom: 7%;
-                    right: 6%;
-                    font-size: 1.4rem;
-                    // padding-right: 1rem;
-                }
+
+            .ResHeartMove {
+                position: absolute;
+                bottom: 7%;
+                right: 6%;
+                font-size: 1.4rem;
+                // padding-right: 1rem;
+            }
 
 
 
