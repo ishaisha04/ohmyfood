@@ -38,6 +38,7 @@
 
     #{&}-btn {
         background: linear-gradient(to bottom right, $secondary, $primary);
+        border: none;
         color: $white;
         cursor: pointer;
         border-radius: 2rem;

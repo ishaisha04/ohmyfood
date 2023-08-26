@@ -230,6 +230,7 @@
 }
 .explore .explore-btn {
   background: linear-gradient(to bottom right, #FF79DA, #9356dc);
+  border: none;
   color: #ffffff;
   cursor: pointer;
   border-radius: 2rem;
