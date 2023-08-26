@@ -85,7 +85,9 @@
     .booking-steps_btn2::before {
         @include numbering("2")
     }
-
+    .booking-steps_btn3 i{
+        color: $primary;
+    }
     .booking-steps_btn3::before {
         @include numbering("3")
     }
