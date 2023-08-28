@@ -72,7 +72,6 @@
   position: relative;
 }
 .ResHeartMove__bottom {
-  position: relative;
   opacity: 1;
   transition: opacity 1s;
 }
@@ -512,6 +511,9 @@ header .logo {
   height: 3rem;
   font-size: 1rem;
   margin: 2rem auto;
+}
+.order-btn:hover {
+  background: linear-gradient(to bottom right, #f09dd8, #8565ac);
 }
 
 @media (max-width: 768px) {
