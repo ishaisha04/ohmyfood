@@ -68,7 +68,11 @@
   transform: rotate(360deg);
 }
 
+.ResHeartMove {
+  position: relative;
+}
 .ResHeartMove__bottom {
+  position: relative;
   opacity: 1;
   transition: opacity 1s;
 }
@@ -431,6 +435,9 @@ header .logo {
   justify-content: space-evenly;
   padding: 0.5rem 2rem;
   font-size: 1.4rem;
+}
+.menu .menu-name .ResHeartMove {
+  position: relative;
 }
 .menu .menu-subheading {
   font-size: 1rem;
