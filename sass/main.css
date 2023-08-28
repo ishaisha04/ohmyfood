@@ -241,6 +241,9 @@
   height: 3rem;
   font-size: 1rem;
 }
+.explore .explore-btn:hover {
+  background: linear-gradient(to bottom right, #f09dd8, #8565ac);
+}
 
 .booking-steps {
   display: flex;
