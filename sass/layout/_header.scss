@@ -1,5 +1,10 @@
 h1,h2,h3,h4,h5,h6 {
     font-family: $shrikhand-font;
+    font-weight: 100;
+}
+p {
+    font-family: $roboto-font;
+    font-weight: 200;
 }
 .logo {
     @include flexcenter(row);
@@ -26,7 +31,7 @@ h1,h2,h3,h4,h5,h6 {
 
     #{&}-heading {
         font-size: 1.6rem;
-        font-weight: 800;
+        // font-weight: 800;
         padding-bottom: 1.5rem;
     }
 
@@ -47,8 +52,11 @@ h1,h2,h3,h4,h5,h6 {
         width: 14rem;
         height: 3rem;
         font-size: 1rem;
+        transition: hover 2s;
         &:hover {
-                background: linear-gradient(to bottom right, #f09dd8, #8565ac);
+                
+                opacity: 0.8;
+                box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.6);
             }
     }
 }
@@ -59,7 +67,7 @@ h1,h2,h3,h4,h5,h6 {
 
     #{&}_heading {
         font-size: 1.6rem;
-        font-weight: 800;
+        // font-weight: 800;
         padding-bottom: 1rem;
     }
 
@@ -91,8 +99,9 @@ h1,h2,h3,h4,h5,h6 {
         @include numbering("2")
     }
     .booking-steps_btn3{
-        background:#f9dff2;
-        opacity: 0.6;
+        // background: linear-gradient(to bottom right,#fae3f4 , white);
+        background:rgba(250, 227, 244, 0.6);
+        
     }
     .booking-steps_btn3 i{
         color: $primary;

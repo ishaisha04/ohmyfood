@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 .menu-dish {
   display: flex;
   flex-direction: column;
@@ -181,7 +181,7 @@
   flex-direction: column;
   background: #353535;
   color: #f6f6f6;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 .footer .footer-heading {
   font-size: 1.6rem;
@@ -190,9 +190,18 @@
 .footer .footer-link {
   font-size: 1.2rem;
 }
+.footer .footer-link i {
+  padding-left: 0.5rem;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Shrikhand", cursive;
+  font-weight: 100;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
 }
 
 .logo {
@@ -228,7 +237,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .explore .explore-heading {
   font-size: 1.6rem;
-  font-weight: 800;
   padding-bottom: 1.5rem;
 }
 .explore .explore-para {
@@ -246,9 +254,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 14rem;
   height: 3rem;
   font-size: 1rem;
+  transition: hover 2s;
 }
 .explore .explore-btn:hover {
-  background: linear-gradient(to bottom right, #f09dd8, #8565ac);
+  opacity: 0.8;
+  box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.6);
 }
 
 .booking-steps {
@@ -261,7 +271,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .booking-steps .booking-steps_heading {
   font-size: 1.6rem;
-  font-weight: 800;
   padding-bottom: 1rem;
 }
 .booking-steps .booking-steps_btn {
@@ -303,8 +312,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
 }
 .booking-steps .booking-steps_btn3 {
-  background: #f9dff2;
-  opacity: 0.6;
+  background: rgba(250, 227, 244, 0.6);
 }
 .booking-steps .booking-steps_btn3 i {
   color: #9356dc;
@@ -322,6 +330,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Shrikhand", cursive;
+  font-weight: 200;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 .restaurants {
@@ -404,6 +418,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Shrikhand", cursive;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
 }
 
 .mar {
@@ -532,9 +550,11 @@ header .logo {
   height: 3rem;
   font-size: 1rem;
   margin: 2rem auto;
+  transition: box-shadow 0.3s ease-in-out;
 }
 .order-btn:hover {
-  background: linear-gradient(to bottom right, #f09dd8, #8565ac);
+  opacity: 0.8;
+  box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.6);
 }
 
 @media (max-width: 768px) {
