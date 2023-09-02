@@ -9,9 +9,6 @@
     display:flex;
     flex-direction:$direction;
 }
-// @mixin boxshadow{
-
-// }
   @mixin numbering($number){
      content: $number;
      position: absolute;

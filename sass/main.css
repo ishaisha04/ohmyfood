@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 .menu-dish {
   display: flex;
   flex-direction: column;
@@ -296,6 +298,10 @@
   padding: 0 0.5rem;
   border-radius: 50%;
 }
+.booking-steps .booking-steps_btn3 {
+  background: #f9dff2;
+  opacity: 0.6;
+}
 .booking-steps .booking-steps_btn3 i {
   color: #9356dc;
 }
@@ -308,6 +314,10 @@
   color: #ffffff;
   padding: 0 0.5rem;
   border-radius: 50%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Shrikhand", cursive;
 }
 
 .restaurants {
