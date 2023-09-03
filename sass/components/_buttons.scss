@@ -1,6 +1,6 @@
 .menu-dish {
     @include displayflex(column);
-    width: 30%;
+    width: 50%;
     border-radius: 0.5rem;
     background: $white;
     padding: 0.5rem;
@@ -55,7 +55,7 @@
     &:hover {
         cursor: pointer;
         & .dish-in {
-            width: 180px;
+            // width: 180px;
             white-space: nowrap;
             /* Prevent line break */
             overflow: hidden;

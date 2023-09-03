@@ -1,16 +1,23 @@
-.footer{
+.footer {
     @include displayflex(column);
-    background:$darkgrey;
+    background: $darkgrey;
     color: $offwhite;
     padding: 1.5rem;
-    #{&}-heading{
+
+    #{&}-heading {
         font-size: 1.6rem;
         padding-bottom: 1rem;
     }
-    #{&}-link{
+
+    #{&}-link {
         font-size: 1.2rem;
-        i{
-            padding-left: 0.5rem;
+
+        .fa-utensils {
+            margin-right: 1rem;
+        }
+
+        .fa-handshake-angle {
+            margin-right: 0.3rem;
         }
     }
 }
